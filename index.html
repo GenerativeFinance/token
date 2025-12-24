@@ -70,44 +70,26 @@ two_coumns_three:
       description: |
         For computation providers (training/validating on local datasets).
 
-pricing_table:
+clients_carousel:
   enable: true
-  title: "Our Pricing"
-  sub_title: 'We offer great prices, premium products and quality service for your business.'
-  bg_image: "/assets/images/art/bg4.webp"
-  plans:
-    - title: "Basic Pricing"
-      monthly_price: 9
-      pricing_url: "#"
-      features:
-        - "<strong>1</strong> Project"
-        - "<strong>100K</strong> API Access"
-        - "<strong>100MB</strong> Storage"
-        - "Custom <strong>Cloud</strong> Services"
-        - "Weekly <strong>Reports</strong>"
-        - "7/24 <strong>Support</strong>"
+  title: "We are creative company that values quality not quantity and focuses on establishing long-term relationships with clients."
 
-    - title: "Premium Plan"
-      monthly_price: 19
-      pricing_url: "#"
-      features:
-        - "<strong>5</strong> Project"
-        - "<strong>200K</strong> API Access"
-        - "<strong>250MB</strong> Storage"
-        - "Custom <strong>Cloud</strong> Services"
-        - "Weekly <strong>Reports</strong>"
-        - "7/24 <strong>Support</strong>"
+services_area:
+  enable: true
+  title: |
+    The full service we are offering is specifically <br class="d-none d-lg-block">designed to meet your business needs.
+  services:
+    - title: "24/7 Support"
+      sub_title: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio. Cum sociis natoque penatibus magnis dis."
+      icon: "/assets/images/icon/hs-24-hours-1.webp" 
 
-    - title: "Corporate Plan"
-      monthly_price: 49
-      pricing_url: "#"
-      features:
-        - "<strong>49</strong> Project"
-        - "<strong>300K</strong> API Access"
-        - "<strong>500MB</strong> Storage"
-        - "Custom <strong>Cloud</strong> Services"
-        - "Weekly <strong>Reports</strong>"
-        - "7/24 <strong>Support</strong>"
+    - title: "Secure Payments"
+      sub_title: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio. Cum sociis natoque penatibus magnis dis."
+      icon: "/assets/images/icon/st-payment-method.webp"
+
+    - title: "Daily Updates"
+      sub_title: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo odio. Cum sociis natoque penatibus magnis dis."
+      icon: "/assets/images/icon/ms-cloud-computing.webp"
 
 faq_area:
   enable: true
@@ -397,57 +379,54 @@ faq_area:
     {% endif %}
   </div>
 </div>
-{% if page.pricing_table.enable %}
-<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.pricing_table.bg_image}}">
-  <div class="container inner text-center">
-    <div class="row">
-    	<div class="col-md-7 mx-auto">
-          <h2 class="title-color color-white text-center">{{page.pricing_table.title}}</h2>
-          <h3 class="display-3 mb-0">{{page.pricing_table.sub_title}}</h3>
-    	</div>
+  <!-- Brand Wrapper-->
+  <div class="wrapper light-wrapper">
+    <div class="container inner ">
+      {% if page.clients_carousel.enable %}
+      <h2 class="display-3 text-center">{{page.clients_carousel.title}}</h2>
+      <div class="space40"></div>
+      {% include components/clients/clients-carousel.html %}
+
+      <!-- /.owl-carousel -->
+      {% endif %}
     </div>
   </div>
- <div class="space160"></div>
-</div>
-{% endif %}
-<div class="wrapper overflow-top">
-  <div class="container inner pt-0">
-  	{% if page.pricing_table.enable %}
-    <div class="pricing-wrapper" data-aos="fade-up" data-aos-delay="300">
-      <div class="row g-0">
-        {% assign pricings = page.pricing_table.plans %}
-        {% for pricing in pricings %}
-        <div class="col-md-4 {% if forloop.index == 2 %} popular {% endif %}">
-          <div class="pricing panel box bg-white shadow">
-            <div class="panel-heading">
-              <h4 class="panel-title mb-35">{{pricing.title}}</h4>
-              <div class="prices color-dark">
-                <div class="price price-show"><span class="price-currency">$</span><span class="price-value">{{pricing.monthly_price}}</span> <span class="price-duration">month</span></div>
-              </div>
-            </div>
-            <!--/.panel-heading -->
-            <div class="panel-body">
-              <table class="table">
-                {% for feature in pricing.features %}
-                <tr>
-                  <td>{{feature}}</td>
-                </tr>
-                {% endfor %}
-              </table>
-            </div>
-            <!--/.panel-body -->
-            <div class="panel-footer">
-              {% if pricing.pricing_url %}
-               <a href="{{pricing.pricing_url}}" class="btn" role="button">Choose Plan</a>
-              {% endif %}
-           </div>
+  <!-- /.Brand Wrapper-->
+  <!-- Features Wrapper-->
+  {% if page.services_area.enable %}
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <h3 class="display-3 text-center">We are creative company that values quality not quantity and focuses on
+        establishing long-term relationships with clients.</h3>
+      <div class="space40"></div>
+
+      <div class="row text-center">
+        {% for services in page.services_area.services %}
+
+        {% assign loopindex = forloop.index %}
+
+        {% if loopindex == 3 %}
+        <div class="space30 d-none d-md-block d-lg-none"></div>
+        {% elsif loopindex == 4 %}
+        <div class="space30 d-none d-lg-block"></div>
+        {% elsif loopindex == 5 %}
+        <div class="space30 d-none d-md-block d-lg-none"></div>
+        {% endif %}
+        <div class="col-md-6 col-lg-4">
+          <div class="box bg-white shadow shadow-hover">
+            <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
+            <h5>{{services.title}}</h5>
+            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo
+              odio donec elit.</p>
           </div>
-          <!--/.pricing -->
+          <!--/.box -->
         </div>
+        <!--/column -->
         {% endfor %}
       </div>
     </div>
-    {% endif %}
+  </div>
+  {% endif %}
     <div class="faq-area">
     {% if page.faq_area.enable %}
     <div class="row">
