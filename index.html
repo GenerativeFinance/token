@@ -274,14 +274,45 @@ subscribe_area:
 	      <!-- /.tp-caption -->
 	      {% endif %}
 	      {% if page.slider_area.title %}
-              <div class="wrapper gray-wrapper">
+          <div class="tp-caption font-weight-500 color-dark" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']" 
+             data-voffset="['-125','-125','-125','-105']" 
+             data-fontsize="['40','40','34','36']" 
+             data-lineheight="['50','50','44','46']" 
+             data-width="['500','500','420','340']" 
+             data-textAlign="['left','left','left','center']" 
+             data-whitespace="['normal','normal','normal','normal']" 
+             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;"> 
+             <div class="wrapper gray-wrapper">
                 <div class="container inner">
                   <h2 class="display-1 larger">GeFi token <span class="typer color-default" data-bs-delay="300" data-delim=":" data-words="Powering Decentralized AI Finance.:The World's First Federated AI Finance Token.:The Token for Privacy-Preserving AI Models."></span><span class="cursor color-default" data-owner="typer"></span></h2>
-                </div>
+              </div>
             <!-- /.container -->
               </div>
+        </div>
         {% endif %}
 	    <!-- /.tp-caption -->
+	    {% if page.slider_area.sub_title %}
+          <div class="tp-caption font-weight-300 color-dark" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']"
+             data-voffset="['-20','-20','-20','30']" 
+             data-fontsize="['26','26','22','24']" 
+             data-lineheight="['36','36','32','34']" 
+             data-width="['500','500','420','340']" 
+             data-textAlign="['left','left','left','center']" 
+             data-whitespace="['normal','normal','normal','normal']" 
+             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.sub_title}}
+         </div>
+	     <!-- /.tp-caption -->
+	     {% endif %}
 	     {% if page.slider_area.button_text %}
           <a class="tp-caption btn btn-l btn-default" 
              data-x="['left','left','left','center']" 
