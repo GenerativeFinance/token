@@ -60,12 +60,12 @@ social_accounts:
 
 # Site Wide External Links for footer
 external_links:
-  title: "Learn More"
+  title: "GeFi"
   links:
     - url: "#"
-      text: "About Us"
+      text: "Why GeFi?"
     - url: "#"
-      text: "Our Story"
+      text: "How It Works"
     - url: "#"
       text: "Projects"
     - url: "#"
@@ -75,7 +75,7 @@ external_links:
 
 # Site Wide External Links for footer
 external_links_02:
-  title: "Need Help?"
+  title: "Company"
   links:
     - url: "#"
       text: "Support"
@@ -90,7 +90,7 @@ external_links_02:
 
 # Site Wide External Links for footer
 external_links_03:
-  title: "Company"
+  title: "Products"
   links:
     - url: "#"
       text: "Our Team"
