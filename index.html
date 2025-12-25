@@ -371,15 +371,24 @@ faq_area:
       <div class="row text-center">
         {% for services in page.services_area.services %}
 
-        {% assign loopindex = forloop.index %}
-
-        {% if loopindex == 3 %}
-        <div class="space30 d-none d-md-block d-lg-none"></div>
-        {% elsif loopindex == 4 %}
+          <div class="col-md-6 col-lg-4">
+          <div class="box bg-white shadow shadow-hover">
+            <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
+            <h5>GeFi for Individuals</h5>
+            <p>A federated network connects developers, financial institutions, and data providers, rewarding each contribution with tokens.</p>
+          </div>
+          <!--/.box -->
+        </div>
         <div class="space30 d-none d-lg-block"></div>
-        {% elsif loopindex == 5 %}
+                <div class="col-md-6 col-lg-4">
+          <div class="box bg-white shadow shadow-hover">
+            <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
+            <h5>{{services.title}}</h5>
+            <p>A federated network connects developers, financial institutions, and data providers, rewarding each contribution with tokens.</p>
+          </div>
+          <!--/.box -->
+        </div>
         <div class="space30 d-none d-md-block d-lg-none"></div>
-        {% endif %}
         <div class="col-md-6 col-lg-4">
           <div class="box bg-white shadow shadow-hover">
             <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
