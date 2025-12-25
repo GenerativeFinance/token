@@ -69,9 +69,9 @@ external_links:
     - url: "/#tokens"
       text: "₲Tokens"
     - url: "#"
-      text: "Pricing"
+      text: "Knowledge Base"
     - url: "#"
-      text: "Features"
+      text: "Transparency"
 
 # Site Wide External Links for footer
 external_links_02:
@@ -80,7 +80,7 @@ external_links_02:
     - url: "#"
       text: "About Us"
     - url: "#"
-      text: "Get Started"
+      text: "Careers"
     - url: "#"
       text: "Contact Us"
     - url: "#"
