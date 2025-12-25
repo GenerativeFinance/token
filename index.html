@@ -271,13 +271,6 @@ faq_area:
     {% endif %}
     {% if page.video_area.enable %}
     <div class="video-area">
-        <div class="row">
-        	<div class="col-md-7 mx-auto">
-		        <div class="space150"></div>
-				<h2 class="title-color color-gray text-center">{{page.video_area.title}}</h2>
-				<h3 class="display-3 mb-0 text-center">{{page.video_area.sub_title}}</h3>
-        	</div>
-        </div>
 		<div class="row" data-aos="fade-up" data-aos-delay="300">
 		  <div class="col-lg-10 offset-lg-1">
 		    <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{page.video_area.vimeo_video_id}}"></div>
