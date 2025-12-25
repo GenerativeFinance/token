@@ -55,8 +55,8 @@ social_accounts:
     - url: "https://www.instagram.com/generativefinance"
       icon: "jam jam-instagram"
 
-    - url: "#"
-      icon: "jam jam-vimeo"
+    - url: "https://www.linkedin.com/company/generativefinance"
+      icon: "jam jam-linkedin"
       
     - url: "#"
       icon: "jam jam-youtube"
