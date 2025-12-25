@@ -267,24 +267,6 @@ faq_area:
 <div class="wrapper light-wrapper">
   <div class="container inner">
   	{% if page.features_area.enable %}
-    <div class="features-area">
-        <div class="row">
-        	<div class="col-md-7 mx-auto">
-		        <h2 class="title-color color-gray text-center">{{page.features_area.title}}</h2>
-				<h3 class="display-3 text-center">{{page.features_area.sub_title}}</h3>
-				<div class="space40"></div>
-        	</div>
-        </div>	
-		<div class="row gutter-60 text-center">
-          {% for features in page.features_area.features %}
-		   <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-		  	<span class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-30"><i class="{{features.icon}}"></i><span class="step bg-{{features.icon_color}}">{{forloop.index}}</span></span>
-		    <h5>{{features.title}}</h5>
-		    <p>{{features.description}}</p>
-		   </div>
-          {% endfor %}
-		</div>
-    </div>
     </div>
     {% endif %}
     {% if page.video_area.enable %}
@@ -296,7 +278,6 @@ faq_area:
 				<h3 class="display-3 mb-0 text-center">{{page.video_area.sub_title}}</h3>
         	</div>
         </div>
-		<div class="space50"></div>
 		<div class="row" data-aos="fade-up" data-aos-delay="300">
 		  <div class="col-lg-10 offset-lg-1">
 		    <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{page.video_area.vimeo_video_id}}"></div>
