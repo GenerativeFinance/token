@@ -43,13 +43,16 @@ google_map: |
 social_accounts:
   title: "Follow Us"
   links:
-    - url: "#"
+    - url: "https://x.com/generativefi"
       icon: "jam jam-twitter"
 
-    - url: "#"
+    - url: "https://www.facebook.com/generativefinance"
       icon: "jam jam-facebook"
 
-    - url: "#"
+    - url: "https://t.me/generativefinance"
+      icon: "jam jam-telegram"
+
+    - url: "https://www.instagram.com/generativefinance"
       icon: "jam jam-instagram"
 
     - url: "#"
