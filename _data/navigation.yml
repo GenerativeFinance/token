@@ -9,4 +9,4 @@ main_menu:
   - text: "Platform"
     url: "/"
   - text: "Transparency"
-    url: "/"
+    url: "/transparency"
