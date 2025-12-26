@@ -270,6 +270,7 @@ faq_area:
     <div class="two-column-one">
     <div class="row">
     <div class="col-md-7 mx-auto">
+	    <div class="space180"></div>
 		<h2 class="title-color color-gray text-center">{{page.two_coumns_one.title}}</h2>
 		<h3 class="display-3 mb-0 text-center">{{page.two_coumns_one.sub_title}}</h3>
 		<div class="space50"></div>
@@ -369,25 +370,17 @@ faq_area:
       <div class="space40"></div>
 
       <div class="row text-center">
+        {% for services in page.services_area.services %}
 
-          <div class="col-md-6 col-lg-4">
-          <div class="box bg-white shadow shadow-hover">
-            <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
-            <h5>GeFi for Individuals</h5>
-            <p>A federated network connects developers, financial institutions, and data providers, rewarding each contribution with tokens.</p>
-          </div>
-          <!--/.box -->
-        </div>
-        <div class="space30 d-none d-lg-block"></div>
-                <div class="col-md-6 col-lg-4">
-          <div class="box bg-white shadow shadow-hover">
-            <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
-            <h5>{{services.title}}</h5>
-            <p>A federated network connects developers, financial institutions, and data providers, rewarding each contribution with tokens.</p>
-          </div>
-          <!--/.box -->
-        </div>
+        {% assign loopindex = forloop.index %}
+
+        {% if loopindex == 3 %}
         <div class="space30 d-none d-md-block d-lg-none"></div>
+        {% elsif loopindex == 4 %}
+        <div class="space30 d-none d-lg-block"></div>
+        {% elsif loopindex == 5 %}
+        <div class="space30 d-none d-md-block d-lg-none"></div>
+        {% endif %}
         <div class="col-md-6 col-lg-4">
           <div class="box bg-white shadow shadow-hover">
             <div class="icon icon-svg mb-20"><img src="{{services.icon}}" alt=""></div>
@@ -397,6 +390,7 @@ faq_area:
           <!--/.box -->
         </div>
         <!--/column -->
+        {% endfor %}
       </div>
     </div>
   </div>
