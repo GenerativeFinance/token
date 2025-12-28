@@ -7,6 +7,6 @@ main_menu:
   - text: "₲Tokens"
     url: "/#tokens"
   - text: "Platform"
-    url: "/"
-  - text: "Transparency"
+    url: "https://gefi.io"
+  - text: "Stats"
     url: "/transparency"
