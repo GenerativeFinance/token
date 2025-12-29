@@ -2,11 +2,11 @@ main_menu:
 
   - text: "Why GeFi?"
     url: "/#why"
-  - text: "How It Works"
+  - text: "How ₲ Tokens Works"
     url: "/#how"
   - text: "₲Tokens"
     url: "/#tokens"
   - text: "Platform"
     url: "https://gefi.io"
   - text: "Stats"
-    url: "/transparency"
+    url: "/stats"
