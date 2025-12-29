@@ -2,7 +2,7 @@ main_menu:
 
   - text: "Why GeFi?"
     url: "/#why"
-  - text: "How ₲ Tokens Works"
+  - text: "How ₲ Tokens Work"
     url: "/#how"
   - text: "₲Tokens"
     url: "/#tokens"
