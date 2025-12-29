@@ -50,7 +50,7 @@ social_accounts:
       icon: "jam jam-facebook"
 
     - url: "https://t.me/generativefinance"
-      icon: "fab fa-telegram-plane"
+      icon: "jam jam-paper-plane""
 
     - url: "https://www.instagram.com/generativefinance"
       icon: "jam jam-instagram"
