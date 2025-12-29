@@ -58,8 +58,11 @@ social_accounts:
     - url: "https://www.linkedin.com/company/generativefinance"
       icon: "jam jam-linkedin"
       
-    - url: "#"
+    - url: "https://youtube.com/@generativefinance"
       icon: "jam jam-youtube"
+
+    - url: "https://luma.com/gefi"
+      icon: "star-alt-1"
 
 # Site Wide External Links for footer
 external_links:
